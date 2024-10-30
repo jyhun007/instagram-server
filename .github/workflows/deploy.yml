@@ -19,6 +19,7 @@ jobs:
           script_stop: true
           script: |
             sudo -i
+            whoami
             cd /home/ubuntu/instagram-server
             git pull origin main --rebase --autostash
             ./gradlew clean build
